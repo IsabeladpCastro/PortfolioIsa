@@ -11,7 +11,7 @@
     --themeColor: #D11174;
     --iconColor: #ffff;
     --textColor: #ffff;
-    --bgColor: #D11174;
+    --bgColor: #302F2F;
 }
 
 header{
@@ -145,4 +145,94 @@ header .footer{
 
 .mobile-nav-active header .footer{
     left: 0;
+}
+
+/* -------------------------------------------------------------------- */
+
+main{
+    margin-left: 300px;
+    background-color: var(--bgColor);
+    transition: 0.3s;
+
+}
+
+@media only screen and (max-width: 1050px){
+    main{
+        margin-left: 0;
+    }
+}
+
+#home{
+    height: 79vh;
+    width: 75%;
+    background-color: var(--bgColor);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+    position: relative;
+}
+
+#home .home-row{
+    z-index: 1;
+}
+
+#home .home-row h1{
+    font-size: 60px;
+    color: var(--textColor);
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    line-height: 70px;
+}
+
+#home .home-row p{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#home .home-row p span{
+    border-bottom: 4px solid var(--themeColor);
+}
+
+#home .home-row button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: var(--textColor);
+    background-color: var(--themeColor);
+}
+
+#home .home-row button:hover{
+    color: var(--textColor);
+    background-color: #a22365;
+}
+
+@media only screen and (max-width: 670px){
+    #home{
+        padding: 30px;
+    }
+
+    #home .home-row h1{
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 50px;
+    }
+
+    #home .home-row h1 br{
+        display: none;
+    }
+
+    #home .home-row p{
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
