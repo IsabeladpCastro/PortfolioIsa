@@ -402,7 +402,7 @@ main{
 
 .exp-box1{
     width: 40%;
-    height: 250px;
+    height: 320px;
     background-color: var(--sideBarColor);
 }
 
@@ -428,7 +428,7 @@ main{
 
 .exp-box2{
     width: 40%;
-    height: 250px;
+    height: 320px;
     background-color: var(--sideBarColor);
 }
 
@@ -488,5 +488,57 @@ main{
 
     .exp-box2 p{
         font-size: 13px;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
+#habilidade{
+    padding: 70px 30px;
+    background-color: #383636;
+}
+
+#habilidade .hab-row{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#habilidade .hab-row .hab-box .hab-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px;
+}
+
+#habilidade .hab-row .hab-box .hab-info h2{
+    color: lightgray;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#habilidade .hab-row .hab-box .hab-outter-line{
+    width: 100%;
+    height: 10px;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+#habilidade .hab-row .hab-box .hab-outter-line .hab-inner-line{
+    height: 10px;
+    background-color: var(--themeColor);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 450px){
+    #habilidade{
+        padding: 50px 15px;
+    }
+
+    #habilidade .hab-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
     }
 }
