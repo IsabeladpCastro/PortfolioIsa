@@ -454,15 +454,16 @@ main{
 
 @media only screen and (max-width: 830px){
     #experiencia{
-        padding: 30px 0px 0px 0px;
+        padding: 30px 10px;
     }
     
-    .exp-row{
+    .exp-row {
         display: flex;
         flex-direction: column;
-        justify-content:center;
-        margin-top: 160px;
+        justify-content: center;
+        margin-top: 20px;
         margin-left: 25px;
+        height: 650px;
     }
 
     .exp-box1{
